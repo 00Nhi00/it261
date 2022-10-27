@@ -35,7 +35,7 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'Project.php' => 'Project',
+    'project.php' => 'Project',
     'gallery.php' => 'Gallery',
 );
 ?>

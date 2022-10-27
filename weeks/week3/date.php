@@ -26,7 +26,11 @@ if($our_time <=11) {
     <img src="./images/sun.png" alt="sun">
     <p>It\'s time to get up!</p>';
 } elseif($our_time <=17) {
-    echo '<h2 style="color:green;">Good Afternoon, '.$name.'</h2>';
+    echo '<h2 style="color:green;">Good Afternoon, '.$name.'</h2>
+    <img src="./images/afternoon.png" alt="afternoon">
+    <p>It\'s afternoon!</p>';
 } else {
-    echo '<h2 style="color:blue;">Good Eveneing, '.$name.'</h2>';
+    echo '<h2 style="color:blue;">Good Eveneing, '.$name.'</h2>
+    <img src="./images/evening.png" alt="evening">
+    <p>It\'s time to have dinner!</p>';
 }
