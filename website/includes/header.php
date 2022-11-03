@@ -76,7 +76,6 @@ $nav = array(
                         }
 
                         }//end foreach
-                        echo '</ul>';
                     ?>
                     </ul>
                 </nav>
