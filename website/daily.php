@@ -1,5 +1,5 @@
 <?php
-include('./includes/header.php');
+include('./includes/header_daily.php');
  
 
 if(isset($_GET['today'])) {
@@ -70,19 +70,24 @@ break;
 
 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch Classwork Exercise</title>
-    <style>
+    <title>Switch Classwork Exercise</title> -->
+    <!-- <style>
         * {
             padding:0;
             margin:0;
             box-sizing:border-box;
         }
+
+        body {
+            background-color:<////////?php echo $background;?>;
+        }
+        
         #wrapper {
             width:940px;
             margin:20px auto;
@@ -110,9 +115,10 @@ break;
         li {
             margin-bottom:20px;
         }
-    </style>
-</head>
-<body style="background-color:<?php echo $background;?>">
+
+       
+    </style> -->
+
 <div id="wrapper">
 <h1>Welcome to our daily page!</h1>
 <?php
@@ -134,8 +140,8 @@ echo $food;
 </ul>
 </div>
     <!-- end wrapper -->
-</body>
-</html>
+<!-- </body>
+</html> -->
 <?php
 include('./includes/footer.php');
 ?>
