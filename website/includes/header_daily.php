@@ -30,6 +30,44 @@ switch(THIS_PAGE) {
     
 
 }
+
+if(isset($_GET['today'])) {
+    $today = $_GET['today'];
+} else {
+    $today = date('l');
+}
+
+switch($today) {
+case 'Wednesday':
+$background = '#E6CAC6';
+break;
+
+
+case 'Thursday':
+$background = '#5CE289';
+break;
+
+case 'Friday':
+$background = '#6CCBFA';
+break;
+
+case 'Saturday':
+$background = 'orange';
+break;
+
+case 'Sunday':
+$background = '#A2B5BF';
+break;
+
+case 'Monday':
+$background = '#F29ABA';
+break;
+
+case 'Tuesday':
+$background = '#8573BF';
+
+
+}
 // our navigational array
 $nav = array(
     'index.php' => 'Home',
@@ -48,6 +86,47 @@ $nav = array(
         content="ie=edge">
         <title><?php echo $title; ?></title>
         <link href="./css/styles.css" type="text/css" rel="stylesheet">
+        <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+
+        body {
+            background-color:<?php echo $background;?>;
+        }
+        
+        #wrapper {
+            width:940px;
+            margin:20px auto;
+        }
+        h1, h2  {
+            margin-bottom:10px;
+            color:red;
+            text-align:center;
+            
+        }
+
+        #logo {
+            margin-left:0;
+        }
+        
+        img {
+            margin-bottom:10px;
+            margin-left:300px;
+        }
+
+        p {
+            margin-bottom:20px;
+        }
+        
+        li {
+            margin-bottom:20px;
+        }
+
+       
+    </style>
     </head>
     <body class="<?php echo $body ;?>">
             <header>
@@ -80,5 +159,6 @@ $nav = array(
                     </ul>
                 </nav>
                 </div>
-            <!-- end inner header -->
             </header>
+            <!-- end inner header -->
+           

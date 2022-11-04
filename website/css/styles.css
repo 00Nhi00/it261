@@ -93,8 +93,8 @@ img {
 /* typography */
 
 p{
-    margin-bottom:20px;
-    line-height:1,4;
+margin-bottom:20px;
+line-height:1.4;
 }
 
 h1 {
@@ -106,7 +106,7 @@ h2 {
 }
 
 h3 {
-    font-family:1.5em;
+font-family:'Times New Roman', Times, serif;
 }
 
 h1, h2, h3 {
