@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- adding <!DOCTYPE html> on line 1 -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -8,7 +7,6 @@
 <!-- adding meta tags -->
 <title>My Adder Assignment</title>
 <style>
-
     p {
         color:red;
         text-align: center;
@@ -42,7 +40,7 @@
 <h1>Adder.php</h1> 
 <form action="" method="post">
 <label>Enter the first number:</label><input type="number" name="num1"><br>
-</label>Enter the second number:</label><input type="number" name="num2"><br>
+<label>Enter the second number:</label><input type="number" name="num2"><br>
 <input type="submit" value="Add Em!!"> 
 </form>
 
@@ -67,13 +65,13 @@ echo ' <p> and the answer is <br>
 </html>
 
 
+  <!-- line 1: missing <!DOCTYPE html> -->
 
-
-  <!-- line 41: removing the slash sign before the form tag, adding post method -->
+  <!-- line 41: removing the slash sign before the form tag, missing post method -->
 
   <!-- line 42: missing opening tag <label>, changing Num1 into num1, changing input type to number -->
 
-  <!-- line 43: missing closing tag </label>, changing input type to number -->
+  <!-- line 43: closing tag </label> put in the beginning not the end, missing opening label tag, wrong input type (number instead of text) -->
 
   <!-- line 44: missing closing double quote after "Em!!" -->
 
