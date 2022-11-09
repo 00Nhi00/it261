@@ -33,8 +33,8 @@
     <label>Fuel efficiency</label>
 <select name="fuel">
   <option value="" NULL <?php if(isset($_POST['fuel']) && $_POST['fuel']==NULL) echo 'selected="unselected"';?>>Select one!</option>
-  <option value="40.00" <?php if(isset($_POST['fuel']) && $_POST['fuel']== '40.00') echo 'selected="unselected"';?>>Great @ 40mpg</option>
-  <option value="10.00" <?php if(isset($_POST['fuel']) && $_POST['fuel']=='10.00') echo 'selected="unselected"';?>>Terrible @ 10mpg</option>
+  <option value="40.00" <?php if(isset($_POST['fuel']) && $_POST['fuel']== '40.00') echo 'selected="selected"';?>>Great @ 40mpg</option>
+  <option value="10.00" <?php if(isset($_POST['fuel']) && $_POST['fuel']=='10.00') echo 'selected="selected"';?>>Terrible @ 10mpg</option>
 </select>
     
   <input type="submit" value="Calculate">

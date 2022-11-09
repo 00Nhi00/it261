@@ -33,11 +33,11 @@
 <label>Chooose your banking institution</label>
 <select name="bank">
   <option value="" NULL <?php if(isset($_POST['bank']) && $_POST['bank']==NULL) echo 'selected="unselected"';?>>Select one!</option>
-  <option value="boa" <?php if(isset($_POST['bank']) && $_POST['bank']== 'boa') echo 'selected="unselected"';?>>Bank of America</option>
-  <option value="chase" <?php if(isset($_POST['bank']) && $_POST['bank']=='chase') echo 'selected="unselected"';?>>Chase Bank</option>
-  <option value="banner" <?php if(isset($_POST['bank']) && $_POST['bank']=='banner') echo 'selected="unselected"';?>>Banner Bank</option>
-  <option value="wells" <?php if(isset($_POST['bank']) && $_POST['bank']=='wells') echo 'selected="unselected"';?>>Wells Fargo</option>
-  <option value="becu" <?php if(isset($_POST['bank']) && $_POST['bank']=='becu') echo 'selected="unselected"';?>>Boeing Credit Union</option>
+  <option value="boa" <?php if(isset($_POST['bank']) && $_POST['bank']== 'boa') echo 'selected="selected"';?>>Bank of America</option>
+  <option value="chase" <?php if(isset($_POST['bank']) && $_POST['bank']=='chase') echo 'selected="selected"';?>>Chase Bank</option>
+  <option value="banner" <?php if(isset($_POST['bank']) && $_POST['bank']=='banner') echo 'selected="selected"';?>>Banner Bank</option>
+  <option value="wells" <?php if(isset($_POST['bank']) && $_POST['bank']=='wells') echo 'selected="selected"';?>>Wells Fargo</option>
+  <option value="becu" <?php if(isset($_POST['bank']) && $_POST['bank']=='becu') echo 'selected="selected"';?>>Boeing Credit Union</option>
 
 </select>
 <input type="submit" value="Convert it">
