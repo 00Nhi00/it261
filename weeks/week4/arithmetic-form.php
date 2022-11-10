@@ -15,7 +15,7 @@
     <input type="text" name="name">
 
     <label>Phone</label>
-    <input type="number" name="phone">
+    <input type="tel" name="phone">
 
     <label>How many Lattes?</label>
     <input type="number" name="lattes">
