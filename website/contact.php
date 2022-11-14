@@ -13,8 +13,9 @@ include('./includes/header.php');
 include('./includes/form.php');
 ?>
 </main>
-<aside>
-    <h3>Let's adopt some cute pets!</h3>
+<aside style="background-color:transparent">
+    <h3 style="margin-left:20px;">Let's adopt some cute pets!</h3>
+    <?php echo random_images($photos)?>
     
 </aside>
     <!-- end wrapper -->

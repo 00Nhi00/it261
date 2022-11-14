@@ -1,25 +1,25 @@
 <?php
 include('config.php');
 include('./includes/header.php');
-$photos[0] = 'dog';
-$photos[1] = 'cat';
-$photos[2] = 'hamster';
-$photos[3] = 'rabbit';
-$photos[4] = 'bird';
-$i = rand(0, 4);
+// $photos[0] = 'dog';
+// $photos[1] = 'cat';
+// $photos[2] = 'hamster';
+// $photos[3] = 'rabbit';
+// $photos[4] = 'bird';
+// $i = rand(0, 4);
 
-// $selected_image = ''.$photos[$i].'.png';
-// echo '<img src="./images/'.$selected_image.'" alt="'.$photos[$i].'">';
-//create a randome_images function 
+// // $selected_image = ''.$photos[$i].'.png';
+// // echo '<img src="./images/'.$selected_image.'" alt="'.$photos[$i].'">';
+// //create a randome_images function 
 
-function random_images($photos) {
+// function random_images($photos) {
     
-    $my_return = '';
-    $i = rand(0,4);
-    $selected_image = ''.$photos[$i].'.png';
-    $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
-    return $my_return;
-}
+//     $my_return = '';
+//     $i = rand(0,4);
+//     $selected_image = ''.$photos[$i].'.png';
+//     $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+//     return $my_return;
+// }
 
 
 ?>

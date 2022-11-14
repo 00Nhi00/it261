@@ -29,6 +29,8 @@
                     <?php
                     echo make_links($nav);
                     ?>
+                    </ul>
+                </nav>
                 </div>
             <!-- end inner header -->
             </header>
