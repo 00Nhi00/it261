@@ -32,7 +32,7 @@
 </ul>
 <label>Chooose your banking institution</label>
 <select name="bank">
-  <option value="" NULL <?php if(isset($_POST['bank']) && $_POST['bank']==NULL) echo 'selected="unselected"';?>>Select one!</option>
+  <option value="" <?php if(isset($_POST['bank']) && $_POST['bank']==NULL) echo 'selected="unselected"';?>>Select one!</option>
   <option value="boa" <?php if(isset($_POST['bank']) && $_POST['bank']== 'boa') echo 'selected="selected"';?>>Bank of America</option>
   <option value="chase" <?php if(isset($_POST['bank']) && $_POST['bank']=='chase') echo 'selected="selected"';?>>Chase Bank</option>
   <option value="banner" <?php if(isset($_POST['bank']) && $_POST['bank']=='banner') echo 'selected="selected"';?>>Banner Bank</option>
@@ -86,31 +86,50 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
   $dollars = $amount * $currency;
 
   if(!empty($name && $email && $amount && $currency && $bank)) {
-
+  
   echo '
+
   <div class="box">
   <h2><b>Hello '.$name.',</b></h2>
-  <p>You now have <b>'.number_format($dollars, 2).' American dollars </b> and we will be emailing you at '.$email.' with your information, as well as depositing your funds at <b>'.$bank.' bank!</b></p>
+  <p>You now have <b>'.number_format($dollars, 2).' American dollars </b> and we will be emailing you at <b>'.$email.'</b> with your information, as well as depositing your funds at <b>'.$bank.' bank!</b></p>
   </div>
   ';
 
 
 if ($dollars >= 1000){
   echo '
-  <div class="box2">
+  <div class="box2" style="background-color:gray; color:black;">
   <p><b>I am REALLY happy, because I have $'.number_format($dollars, 2).' American dollars!</b></p>
   <iframe width="420" height="315" src="https://www.youtube.com/embed/ufbOHl1mmYk"></iframe>
   </div>';
 } else {
   echo'
-  <div class="box2">
+  <div class="box2" style="background-color:black; color:yellow;">
   <p><b>I am NOT happy, because I have $'.number_format($dollars, 2).' American dollars!</b></p>
   <iframe width="420" height="315" src="https://www.youtube.com/embed/YNwS2o8VeUY"></iframe>
   </div>';
+  
 }
 } 
 }
 }
 ?>
+
+<footer>
+        <ul>
+            <li>Copyright &copy;
+                2022</li>
+            <li>All Rights Reserved</li>
+            <li><a href="../index.php">Web Design by NHI NGUYEN</a></li>
+            <li><a id="html-checker" href="#">HTML Validation</a></li>
+            <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+            
+        <script>
+            document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+            document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+                
+</footer>
 </body>
 </html>

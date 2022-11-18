@@ -5,7 +5,7 @@
 }
 
 body {
-  background:#ddd;
+  background:beige;
 }
 
 form {
@@ -15,6 +15,7 @@ form {
 
 fieldset {
   padding:10px;
+  border:1px solid #800;
 }
 
 label {
@@ -54,6 +55,9 @@ form ul li{
   padding:10px;
   margin:0 auto;
   text-align: center;
+  border: 2px solid green;
+  margin-bottom: 15px;
+
 }
 
 .error {
@@ -66,9 +70,29 @@ form ul li{
   width:500px;
   text-align:center;
   margin:auto;
+  padding:10px 10px;
+  
+
 }
 
 .box2 p{
   margin-bottom:15px;
   font-size:25px;
+}
+footer {
+    height:60px;
+    line-height:60px;
+    background:#ddd;
+    clear:both;
+}
+
+footer ul{
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+}
+
+footer li{
+    justify-content:center;
+    margin:0 15px;
 }
