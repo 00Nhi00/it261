@@ -24,7 +24,7 @@ $people['Julian_Castro'] = 'castr_Former Housing/Urban from TX.';
     <title>week 7, class exercise - picture</title>
     <style>
         table{
-            boder:1px solid red;
+            border:1px solid red;
             border-collapse:collapse;
         }
 
