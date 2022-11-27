@@ -18,7 +18,7 @@
       <li><a href="weeks/week5/calculator.php">Calculator</a><li>
       <li><a href="">Email</a><li>
       <li><a href="">Database</a><li>
-      <li><a href="">Gallery</a><li>
+      <li><a href="website/gallery.php">Gallery</a><li>
 </ul>
 </nav>
 <main>
