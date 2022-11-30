@@ -90,7 +90,7 @@
 <ol>
   <li><a href="adminer-4.8.1.php">adminer.php</a></li>
   <li><a href="weeks/week8/people.php">people.php</a></li>
-  <li><a href="weeks/week8/people-view.php">people-view.php</a></li>
+  <li><a href="weeks/week8/people-view.php?id=<?php echo rand(1,6);?>">people-view.php</a></li>
 </ol>
 
 </aside>
