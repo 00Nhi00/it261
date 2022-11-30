@@ -1,6 +1,10 @@
 <?php
-
+include('./includes/header.php');
 include('config.php');
+?>
+<div id="wrapper">
+<main>
+<?php
 
 $sql = 'SELECT * FROM people';
 //now, we have to connect to our database
@@ -21,12 +25,32 @@ while($row = mysqli_fetch_assoc($result)){
 <h2>Information about: '.$row['first_name'].'</h2>
 <ul>
 <li><b>First Name</b> '.$row['first_name'].'</li>
-<li><b>Last Name</b> '.$row['last_nane'].'</li>
-<li><b>Birthday</b> '.$row['birthday'].'</li>
+<li><b>Last Name</b> '.$row['last_name'].'</li>
+<li><b>Birthdate</b> '.$row['birthdate'].'</li>
 </ul>
 <p>For more information about '.$row['first_name'].', click <a href="people-view.php?id='.$row['people_id'].'">here</a></p>
 ';
 }// end while
-}// end if number of row is greater than 0
+}else{// end if number of row is greater than 0
+echo 'Nobody is home!';
+}
+
+//we are going to release the server
+@mysqli_free_result($result);
+
+//close the connection
+@mysqli_close(iConn);
+
+
+
 
 ?>
+</main>
+<aside>
+  <h3>I will display my random images here!</h3>
+  <?php echo random_images($pics);?>
+</aside>
+
+</div> <!--  end wrapper -->
+<?php
+include('./includes/footer.php');

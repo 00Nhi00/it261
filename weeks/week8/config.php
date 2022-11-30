@@ -36,3 +36,21 @@ if(defined('DEBUG') && DEBUG)
     
     
 }
+// create random_images function for people.php page
+$pics[0] = 'pic1';
+$pics[1] = 'pic2';
+$pics[2] = 'pic3';
+$pics[3] = 'pic4';
+$pics[4] = 'pic5';
+
+
+
+
+function random_images($pics) {
+    $my_return = '';
+    $i = rand(0,4);
+    $selected_image = ''.$pics[$i].'.jpeg';
+    $my_return = '<img src="images/'.$selected_image.'" alt="'.$pics[$i].'">';
+    return $my_return;
+}
+

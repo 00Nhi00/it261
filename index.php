@@ -86,6 +86,13 @@
   <li><a href="weeks/week7/strings.php">strings.php</a></li>
 </ol>
 
+<h3>Week 8</h3>
+<ol>
+  <li><a href="adminer-4.8.1.php">adminer.php</a></li>
+  <li><a href="weeks/week8/people.php">people.php</a></li>
+  <li><a href="weeks/week8/people-view.php">people-view.php</a></li>
+</ol>
+
 </aside>
 </div>
 <!--end wrapper -->
