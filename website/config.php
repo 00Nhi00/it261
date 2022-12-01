@@ -18,7 +18,7 @@ switch(THIS_PAGE) {
         $title = 'Daily page of our Website Project';
         $body = 'daily inner';
         break;
-    case 'project.php':
+    case 'cities.php':
         $title = 'Project page of our Website Project';
         $body = 'project inner';
         break;
@@ -30,6 +30,11 @@ switch(THIS_PAGE) {
         $title = 'Gallery page of our Website Project';
         $body = 'gallery inner';
         break;
+    case 'cities-view.php':
+        $title = 'Cities-view page of our Website Project';
+        $body = 'city-view inner';
+        break;
+
     
 
 }
