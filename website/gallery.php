@@ -4,9 +4,12 @@ $singer['Justin_Bieber'] = 'Justin was born on March 1, 1994 - Singer';
 $singer ['Ariana_Grande'] = 'Ariana was born on June 26, 1993 - Singer';
 $singer['Ed_Sheeran'] = 'EdShee was born on February 17, 1991 - Singer';
 $singer ['Adele_Adkins'] = 'AdeleA was born on May 5, 1988 - Singer';
+include('config.php');
+include('./includes/header.php');
+
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +34,8 @@ $singer ['Adele_Adkins'] = 'AdeleA was born on May 5, 1988 - Singer';
         }
     </style>
 </head>
-<body>
+<body> -->
+    <h2>Welcome to our gallery!</h2>
     <table>
         <?php foreach($singer as $name => $image) :?>
         <tr>

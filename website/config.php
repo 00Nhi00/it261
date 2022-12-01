@@ -38,7 +38,7 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'cities.php' => 'Cities',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
@@ -395,5 +395,58 @@ function random_images($photos) {
     $i = rand(0,4);
     $selected_image = ''.$photos[$i].'.png';
     $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+    return $my_return;
+}
+
+// config file for movies.php
+
+// ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
+}
+// create random_images function for people.php page
+
+$photos[5] = 'city1';
+$photos[6] = 'city2';
+$photos[7] = 'city3';
+$photos[8] = 'city4';
+$photos[9] = 'city5';
+
+function random_cities($photos) {
+    $my_return = '';
+    $i = rand(5,9);
+    $selected_image = ''.$photos[$i].'.png';
+    $my_return = '<img style="position:fixed;" src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
     return $my_return;
 }

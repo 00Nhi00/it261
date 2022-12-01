@@ -65,7 +65,7 @@ main {
 
 aside {
     width:35%;
-    background:lightsalmon;
+    background:transparent;
     float:right;
 }
 
@@ -194,3 +194,36 @@ h1, h2, h3 {
     margin:20px auto;
     padding:10px;
   }
+
+/* style for gallery page */
+table{
+    border:1px solid black;
+    border-collapse:collapse;
+    margin:auto;
+}
+
+td {
+    border: 1px solid black;
+    padding:5px;
+}
+
+td img{
+    width:150px;
+    height:150px;
+}
+/* style for about and cities-view page */
+
+figure img {
+  display:block;
+  margin:auto;
+  width:350px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+h2 + a img {
+  display:block;
+  margin:auto;
+}
