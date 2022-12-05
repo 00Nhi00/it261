@@ -1,5 +1,8 @@
 <?php
 ob_start();
+//test errors 
+error_reporting(-1);
+ini_set('display_errors', 'On');
 
 $first_name= '';
 $last_name = '';
@@ -122,12 +125,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers = array(
         'From' => 'noreply@mystudentswa.com'
     );
-    
+    $headers = implode("\n", $headers);
+
     if(!empty($first_name && $last_name && $email && $gender && $phone && $size && $pets && $comments) && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) ){
 
     
     mail($to, $subject, $body, $headers);
-    header('Location:./thx.php');
+    header('Location: ./thx.php');
+    // $mail_sent = @mail( $to, $subject, $body, $headers ); 
+    // echo $mail_sent ? "Mail sent" : "Mail failed";
     }
 }//end isset
 }// end server request method
