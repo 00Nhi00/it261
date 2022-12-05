@@ -110,6 +110,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $_POST['privacy'])){
 
     $to = 'szemeo@mystudentswa.com';
+    ini_set('date.timezone', 'America/Los_Angeles'); 
     $subject = 'Email on '.date('m/d/y, h i A');
     $body = '
     First Name : '.$first_name.' '.PHP_EOL.'
