@@ -3,7 +3,7 @@ include('server.php');
 
 //include('./includes/header.php)
 ?>
-
+<div id="wrapper">
 <h1>Login page!</h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
 <fieldset>
@@ -19,3 +19,14 @@ include('server.php');
 <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>'">Reset</button>
 </fieldset>
 </form>
+
+<?php
+include('errors.php');
+?>
+
+<p>Haven't registered? Please visit our <a href="register.php">Registration Page!</a></p>
+</div> 
+<!-- close wrapper -->
+<?php
+include('./includes/footer.php');
+

@@ -1,5 +1,6 @@
 <?php
-
+ini_set('display_errors', 1); 
+error_reporting(E_ALL);
 // our server.php file - this is where our session will start
 //our session is a way to store the information
 
@@ -9,10 +10,10 @@ include('config.php');
 
 
 // this is where eventually you'll have  the header include
-// include('./includes/header.php');
+include('./includes/header.php');
 
 // this server.php page will be communicationg to our database!!
-
+$errors=[];
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 // register the user, using  if isset reg_user
 
@@ -26,13 +27,14 @@ if(isset($_POST['reg_user'])) {
 
     //we want to make sue that all the input fields have been filled out
     // if empty, you are going to use a new fuction which is called array_push()
-
+  
     if(empty($first_name)) {
         array_push($errors, 'First name is required!!!');
     }
 
     if(empty($last_name)) {
         array_push($errors, 'Last name is required!!!');
+        // $error[$last_name]='Last name is requrired';
     }
 
     if(empty($email)) {
@@ -63,7 +65,7 @@ if(isset($_POST['reg_user'])) {
 
     // we are going to have an if statement, and we will nest 2 additional if statements inside our main if statement
     // bottom line is we cannot have duplicate usernames or duplicate emails
-    if($row){
+    if($rows){
 
         if($rows['username'] == $username) {
             // $error[]='Username already exists!';
@@ -111,7 +113,7 @@ if(isset($_POST['login_user'])) {
         $password = md5($password);
     
 
-    $query ="SELECT * FROM users WHERE username ='$username' AND password = 'password' ";
+    $query ="SELECT * FROM users WHERE username ='$username' AND password = '$password' ";
 //below you have a new variable that is results not result
     $results = mysqli_query($iConn, $query);
 
